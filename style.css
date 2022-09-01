@@ -135,10 +135,6 @@ ul, li {
     cursor: pointer;
 }
 
-.login, .register {
-    margin: 0 auto;
-}
-
 #hero-mobile {
     width: 100%;
 }
@@ -202,6 +198,12 @@ footer {
     color: hsl(228, 45%, 44%); 
 }
 
+@media only screen and (max-width: 768px) {
+    .login, .register {
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     html {
         font-size: 16px;
@@ -229,6 +231,7 @@ footer {
 
     nav ul li {
         padding: 10px 20px;
+        white-space: nowrap;
     }
 
     nav ul li:hover {
@@ -266,6 +269,7 @@ footer {
 
     .userAccess {
         display: flex;
+        justify-content: right;
     }
 
     .register {
