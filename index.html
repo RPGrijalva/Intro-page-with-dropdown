@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+ 
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <header>
+    <section class="first-menu">
+      <img src="images/logo.svg" alt="logo" class="logo" />
+      <label class="menu-icon" for="menu"> 
+        <img src="images/icon-menu.svg" alt="menu" class="menu" />
+        <input class="menu" type="checkbox" value="menu" name="menu" id="menu" />
+      </label>
+
+    </section>
+    <nav>
+      <label for="menu" class="close-nav">
+        <img src="images/icon-close-menu.svg" alt="close menu" class="close-icon menu-icon" />
+      </label>
+      <ul class="hidden-menu">
+        <span class="main-nav">
+          <li class="features"> 
+            <label for="features-check" >Features &nbsp;&nbsp;<img alt="down arrow" src="images/icon-arrow-down.svg" id="features-icon" /></label><input type="checkbox" value="features" name="features-check" id="features-check" />
+            <ul id="features-list">
+              <li class="features-item inner-list"><img src="images/icon-todo.svg" alt="todo list icon" /> Todo List</li>
+              <li class="features-item inner-list"><img src="images/icon-calendar.svg" alt="Calendar icon" /> Calendar</li>
+              <li class="features-item inner-list"><img src="images/icon-reminders.svg" alt="Reminders icon" /> Reminders</li>
+              <li class="features-item inner-list"><img src="images/icon-planning.svg" alt="Planning icon" /> Planning</li>
+            </ul>
+          </li>
+          <li class="company">
+            <label for="company-check">Company &nbsp;&nbsp;<img alt="down arrow" src="images/icon-arrow-down.svg" id="company-icon"/></label><input type="checkbox" value="features" name="company-check" id="company-check" />
+            <ul id="company-list">
+              <li class="company-item inner-list"> History</li>
+              <li class="company-item inner-list"> Our Team</li>
+              <li class="company-item inner-list"> Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </span>
+
+        <span class="userAccess">
+          <li class="login">Login</li>
+          <li>
+            <button class="register">
+              Register
+            </button>
+          </li>
+        </span>
+      </ul>
+    </nav>
+  </header>
+
+  <img id="hero-mobile" src="images/image-hero-mobile.png" alt="Person surrounded by shapes on their laptop" />
+  <div id="background-hider"></div>
+  <span id="h1-container">
+    <h1>
+      Make remote work
+    </h1>
+    <section class="mainText">
+      Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.
+    </section>
+
+    
+    <button class="primary">
+      Learn more
+    </button>
+
+    <footer>
+      <img src="images/client-databiz.svg" alt="databiz logo" class="databiz-logo logo" />
+      <img src="images/client-audiophile.svg" alt="audiophile logo" class="audiophile-logo logo" />
+      <img src= "images/client-meet.svg" alt="meet logo" class="meet-logo logo" />
+      <img src= "images/client-maker.svg" alt="maker logo" class="maker-logo logo" />
+    </footer>
+  </span>
+  <span id="desktop-img-grid">
+    <img id="hero-desktop" src="images/image-hero-desktop.png" alt="Person surrounded by shapes on their laptop" />
+  </span>
+
+ 
+
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://rogergrijalva.com/">Roger Grijalva</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
